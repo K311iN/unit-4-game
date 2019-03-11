@@ -1,36 +1,72 @@
-var wordChoices = [red, purple, green, yellow, blue];
-var wordGuess = " "
-var lettersInWords = [];
-var blanks = 0;  
-var BlanksAndSuccesses = [];
-var WrongGuesses = [];
+// Generate random number in random number box  
+// On click of crystal image generate random number between 1 - 12. Then
+//add that number to the counter.
+// If counter === random number incremate wins++
+// Else incremate losses++
+// 
+
+
+//Game Counter
+var winsCounter = 0;
+var lossesCounter = 0;
+var randomNumber = 0;
 
 
 
 
-var wins = 0;
-var losses = 0;
-var numGuess = 10;
 
-function startGame() {
 
-    numGuesses = 10
+$(document).ready(function() {
 
-    wordGuess = wordChoices[Math.floor(Math.Random() * wordChoices.length)];
+    //Generate a random numnber & Display random # in random number box
+    randomNumber = Math.floor(Math.random() * 120) + 19;
+    document.getElementById(ranNumber).innerHTML = randonNumber;
 
-    lettersInWord = wordChoices.split(" ")
+    $("#ranNumber").text(Math.floor(Math.random() * 120) + 19);//???
 
-    numBlanks = lettersInWords.length;
+    
+    
+    
+    $("#number-to-guess").text(????);
+     
+    var counter = 0;
+     
+    $(".crystral-image").on(click, function() {
+      
+        //Generate random # between 1 - 12
+       Math.floor(Math.random() * 12) + 1;
+       
+        
+        
+        
+        //counter incremate by crystal # amount
+       
+      //  counter = incremate;
 
-    console.log(wordGuess)
+      //  if (counter === randomNumber) {
 
-    BlanksAndSuccesses = [];
+       //     wins++;
+       // }
+       // else {
+       //     losses++;
+       // }
 
-    wordGuesses = [];
+  
+    });
 
-    for (var i 0; i < blanks; i++ ) {
+    
+    //Need a random number generator
 
-        blanksAndSuccesses.push(" ") 
-    }
+    
+   
+    
+    
+    
+    
+    
+    
 
-}
+
+});
+
+

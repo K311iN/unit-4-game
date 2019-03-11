@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.crystal-image {
+    width: 150px;
+    height: 150px;
+}
+#ranNumContainer {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(98, 233, 139);
+    color: magenta;
+}
+#wins-losses {
+    width: 150px;
+    height:150px;
+    background-color: teal;
+    color: magenta;
+    position: absolute;
+    right: 980px;
+    top: 75px;
+
+}
