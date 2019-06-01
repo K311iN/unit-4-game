@@ -1,68 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en-us">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--link to CSS-->
+    <title>Crystals Collector</title>
+
+    <!-- jQuery Link -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Game Logic -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!--link to reset-->
-    <link rel="stylesheet" href="aaassets/css/reset.css">
-    <!--link to bootstrap-->
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-    <!--link to jquery-->
-    <title>Crystal Collector!</title>
-</head>
-<body>
-
-    <h1 id="main-heading">CrstyalsCollector!</h1>
-
-
-    <!--container for your random number-->
-    <div id="numberContainers">
     
-        <div id="ranNumContainer">
-            <h4 id=ranNumber>Random-Number:</h4>
-        </div>
+  </head>
+  <body>
 
-        <div id="wins-losses">
-        
-            <h5>Wins:</h5>
+    <h1 id="title">CrystalsCollector!</h1>
 
-            <h5>Losses:</h5>
-
-        </div>
-
+    <div id="rules-area">
+      <h4>You will be given a random number at the start of the game.</h4>
+      <h4>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</h4>
+      <h4>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</h4>
+      <h4>The value of each crystal is hidden from you until you click on it.</h4>
+      <h4>Each time when the game starts, the game will change the values of each crystal</h4>
     </div>
 
-    <!--image link-->
-    <div id="crystals">
-
-            <img class="crystal-image" src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg" alt="crystals">
-
-
-            <img class="crystal-image" src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg" alt="crystals">
-
-            <img class="crystal-image" src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg" alt="crystals">
-
-            <img class="crystal-image" src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg" alt="crystals">
-
-
+    <div id="screen">
+      <!-- Random Number Display -->
+      <div id="random-area"></div>
+      <!-- Wins/Losses Display -->
+      <div id="win-area"></div>
     </div>
-    
-
 
     <div>
-        <h5>Your Total Score:</h5>
+      <!-- Crystals -->
+      <div id="crystal-area"></div>
+      <div id="score-title">Your total score is:</div>
+      <!-- Score Display -->
+      <div id="score-area"></div>
     </div>
-    
-    <div id="counter">
 
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./assets/javascript/game.js"></script>
-    
-
-</body>
+  </body>
 </html>
